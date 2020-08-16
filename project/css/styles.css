@@ -1,0 +1,70 @@
+body{
+  color: black;
+  font-size: 16px;
+  background: url("../img/background-papel.png");
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Header */
+
+#header-nav{ /* fondo header */
+  background: url("../img/portada_background.png");
+  border: 0;
+  border-radius: 0;
+}
+
+#logo-img{ /* Logo */
+  background: url("../img/logo-150.png") no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 20px 20px 20px 0;
+}
+
+.navbar-brand{
+  padding-top: 20px;
+}
+
+.navbar-brand h1{ /* Nombre Libreria */
+  color: white;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+} 
+
+.navbar-brand p{
+  font-size: .7em;
+  color: #CFB53B;
+  text-transform: uppercase;
+  margin-top: -1px;
+  text-align: center;
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+}
