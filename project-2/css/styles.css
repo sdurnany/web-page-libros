@@ -5,7 +5,7 @@ body{
   font-family: 'Oxygen', sans-serif;
 }
 
-/***** Header *************************/
+/* Header */
 
 #header-nav{ /* fondo header */
   background: url("../img/portada_background.png");
@@ -89,76 +89,6 @@ body{
   clear: both;
   margin-top: -30px;
 }
-
-/***** End Header *************************/
-
-
-
-
-/***** Main Content **********************/
-
-/* color de jubotron transparente */
-.jumbotron {
-  background-color: transparent;
-  padding-top: 30px;
-}
-
-/* carrucel */
-
-#slider{
-  overflow: hidden;
-}
-
-#slider figure{
-  position: relative;
-  width: 500%; /* el ancho es de 500% para las 5 imagenes */
-  margin: 0;
-  left: 0; /* esta toda la imagen hacia la iz */
-  animation: 20s slider infinite;
-}
-
-#slider figure img{
-  width: 20%; /* 100 de la pantalla dividida en 5 imagenes */
-  float: left;
-}
-
-@keyframes slider{
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-
-/* End carrucel */
-
-
-
-
-
-/***** End Main Content ******************/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
