@@ -27,7 +27,7 @@ body{
 .navbar-brand h1{ /* Nombre Libreria */
   color: white;
   font-family: 'Abhaya Libre', serif;
-  font-size: 1.8em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: normal;
   margin-top: 15px;
@@ -100,7 +100,8 @@ body{
 /* color de jubotron transparente */
 .jumbotron {
   background-color: transparent;
-  padding-top: 30px;
+  padding-top: 0;
+  margin-top: -5px;
 }
 
 /* carrucel */
@@ -156,6 +157,56 @@ body{
 
 
 
+/* HOME TILES */
+
+#catalogo-tile, #promociones-tile, #compra-tile { /* ajustando cuadro de categoarias */
+  width: 100%;
+  height: 250px;
+  background-color: green;
+  margin-bottom: 15px;
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#catalogo-tile:hover, #promociones-tile:hover, #compra-tile:hover { /* hover de cada categoria */
+  box-shadow: 0 1px 6px 1px #000;
+}
+
+#catalogo-tile { /* imagen de catalogo */
+  background: url("../img/catalogo-tile-360x250.jpg") no-repeat;
+  background-position: center;
+}
+
+#promociones-tile { /* imagen de promociones */
+  background: url("../img/promociones-tile-360x250.jpg") no-repeat;
+  background-position: center;
+}
+
+#compra-tile { /* imagen de compra */
+  background: url("../img/compra-tile-350x250.jpg") no-repeat;
+  background-position: center;
+}
+
+
+#catalogo-tile span, #promociones-tile span, #compra-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+
+}
+
+/* END HOME TILES */
+
+
 
 
 /***** End Main Content ******************/
@@ -172,7 +223,7 @@ body{
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Header menu */
+  /**** HEADER MENU ****/
   .container{ /* container sin el relative para posicionale el menu */
   position: static;
   }
@@ -183,10 +234,22 @@ body{
     margin-top: 40px;
     margin-bottom: 5px;
   }
+  /**** END HEADER MENU *****/
+
+  /**** MAIN CONTENT ****/
+  /* Tails */
+  #compra-tile { /* categoria compra libros en toda la pantalla 1005 */
+    background: url("../img/compra-tile-800x500.jpg") no-repeat;
+    background-position: center;
+  }
+
+
+
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) and (min-width: 481px) {
+  /**** HEADER ****/
   /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
   .container{ /* container sin el relative para posicionale el menu */
   position: static;
@@ -207,6 +270,17 @@ body{
   .navbar-brand p{
     font-size: .6em;
   }
+  /**** HEADER ****/
+
+  /**** MAINT CONTENT ****/
+  /* TILES */
+  #catalogo-tile, #promociones-tile, #compra-tile{
+    width: 360px;
+    margin: 0 auto 20px;
+  }
+  /* END TILES */
+
+
 
 }
 
@@ -214,6 +288,8 @@ body{
 /********** Extre Extra small devices only **********/
 
 @media (max-width: 480px){
+
+  /**** HEADER ****/
     /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
   .container{ /* container sin el relative para posicionale el menu */
   position: static;
@@ -221,8 +297,12 @@ body{
   #nav-list{
     position: static;
   }
+  /* tamaño letra menu desplegable */
+  #nav-list a{
+    font-size: .8em;
+  }
 
-  /* Header */
+  /* Nombre libreria */
   .navbar-brand{
     padding: 10px;
     height: 80px;
@@ -234,4 +314,29 @@ body{
   .navbar-brand p{
     font-size: 2vw;
   }
+
+  /**** END HEADER ****/
+
+  /**** MAINT CONTENT ****/
+  /* carrucel */
+
+
+  /* carrucel */
+
+
+  /* TILES */
+  #catalogo-tile, #promociones-tile, #compra-tile{
+    width: 360px;
+    margin: 0 auto 20px;
+  }
+
+  #catalogo-tile, #promociones-tile, #compra-tile{
+    width: 250px;
+    height: 150px;
+  }
+  #catalogo-tile span, #promociones-tile span, #compra-tile span{
+    height: 20%;
+  }
+
+  /* END TILES */
 }
