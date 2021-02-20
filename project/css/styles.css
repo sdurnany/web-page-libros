@@ -277,9 +277,6 @@ body{
 }
 
 
-
-
-
 /* END FOOTER */
 
 
@@ -423,8 +420,4 @@ body{
 
   /* END TILES */
 
-  /* FOOTER */
-  .title-footer{
-    margin-top: 30PX;
-  }
 }
