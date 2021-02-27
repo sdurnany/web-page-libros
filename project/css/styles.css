@@ -1,11 +1,14 @@
+/*** BODY ***/
 body{
-  color: black;
   font-size: 16px;
+  color: black;
   background: url("../img/background-papel.png");
   font-family: 'Oxygen', 'sans-serif';
 }
 
-/***** Header *************************/
+/*** HEADER ***/
+
+/* Fondo Header */
 
 #header-nav{ /* fondo header */
   background: url("../img/portada_background.png");
@@ -13,14 +16,16 @@ body{
   border-radius: 0;
 }
 
-#logo-img{ /* Logo */
+/* Logo, Titulo y Subtitulo */
+
+#logo-img{ /* Logo como background image */
   background: url("../img/logo150x150.png") no-repeat;
   height: 150px;
   width: 150px;
   margin: 20px 20px 20px 0;
 }
 
-.navbar-brand{
+.navbar-brand{ /*Contenedor de nombre de Libreria y subtitulo se baja un poco*/
   padding-top: 20px;
 }
 
@@ -36,7 +41,7 @@ body{
   letter-spacing: 0.1em;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus{
+.navbar-brand a:hover, .navbar-brand a:focus{ /*Se saca subrrallado de link de nombreLibreria y subtitulo*/
   text-decoration: none;
 } 
 
@@ -49,53 +54,51 @@ body{
 
 }
 
-/* Menu Header */
+/* Menú Header */
 
-.container{ /* container en relative para posicionale el menu */
+.container{ /* container de header en relative para posicionale el menú */
   position: relative;
 }
 
-#nav-list{ /* menu  en absolute respecto al container*/
+#nav-list{ /* menú en absolute respecto al container*/
   position: absolute;
   bottom: 5px;
   right: 0px;
   margin: 0 15px 0 0;
 }
 
-#nav-list li{ /* fondo del menu */
+#nav-list li{ /* fondo del menú */
   background-color: #000;
   opacity: 0.8;
 }
 
-#nav-list a{ /* lutra del menu */
+#nav-list a{ /* letra del menú */
   color: #FFF;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1em;
 }
 
-#nav-list a:hover{
+#nav-list a:hover{ /* hover del menú */
   background: #E7E7E7;
   color: #000;
 }
 
-/* Munu desplegable Header */
+/* Menú desplegable Header */
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{ /* color del icono menu desplegable*/
   border: 1px solid #fff;
 }
 
-.navbar-header button.navbar-toggle{
+.navbar-header button.navbar-toggle{ /* clear both icono de menú deaplegable para que se vea el titulo y subtitulo dentro del header */
   clear: both;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
-/***** End Header *************************/
 
 
 
 
-/***** Main Content **********************/
+/*** MAIN CONTENT ***/
 
 /* color de jubotron transparente */
 .jumbotron {
@@ -319,18 +322,16 @@ body{
   .title-footer{
     margin-top: 30PX;
   }
-
-
-
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) and (min-width: 481px) {
-  /**** HEADER ****/
+  /*** HEADER ***/
   /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
   .container{ /* container sin el relative para posicionale el menu */
   position: static;
   }
+
   #nav-list{
     position: static;
   }
@@ -340,28 +341,22 @@ body{
     padding: 10px;
     height: 80px;
   }
+
   .navbar-brand h1{ /* nombre de Libreria */
     padding-top: 10px;
-    font-size: 5vw;
   }
-  .navbar-brand p{
-    font-size: .6em;
-  }
-  /**** HEADER ****/
 
-  /**** MAINT CONTENT ****/
+  /*** MAINT CONTENT ***/
   /* TILES */
   #catalogo-tile, #promociones-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
   }
-  /* END TILES */
 
-  /* FOOTER */
+  /*** FOOTER ***/
    .title-footer{
      margin-top: 30PX;
    }
-
 }
 
 
@@ -369,7 +364,7 @@ body{
 
 @media (max-width: 480px){
 
-  /**** HEADER ****/
+  /*** HEADER ***/
     /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
   .container{ /* container sin el relative para posicionale el menu */
   position: static;
@@ -389,10 +384,10 @@ body{
   }
   .navbar-brand h1{ /* nombre de Libreria */
     padding-top: 10px;
-    font-size: 7vw;
+    font-size: 7.73vw;
   }
-  .navbar-brand p{
-    font-size: 2vw;
+  .navbar-brand p{ /* Subtitulo*/
+    font-size: 2.6vw;
   }
 
   /**** END HEADER ****/
