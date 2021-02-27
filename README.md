@@ -6,4 +6,4 @@ Este proyecto personal nace con el objetivo de aprender y practicar lenguajes HT
 
 La(s) pagina(s) se basan principalmente en los conocimientos aprendidos en el curso [HTML, CSS, and JavaScript for Web Developers](https://es.coursera.org/learn/html-css-javascript-for-web-developers), ofrecido por Johns Hopkins University, mediante [coursera](https://es.coursera.org/).
 
-Por último, la construcción de la página se apoya del código abierto [Bootstrap](https://getbootstrap.com/) para lograr un proceso de construcción más rápido y responsivo.
+Por último, la construcción de la(s) página(s) se apoya del código abierto [Bootstrap](https://getbootstrap.com/) para lograr un proceso de construcción más rápido y responsivo.
