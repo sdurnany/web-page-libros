@@ -100,7 +100,7 @@ body{
 
 /*** MAIN CONTENT ***/
 
-/* color de jubotron transparente */
+/* Color de jubotron transparente */
 .jumbotron {
   background-color: transparent;
   padding-top: 0;
@@ -219,7 +219,7 @@ body{
 	padding-top: 35px;
 	padding-bottom: 20px;
 	background-color: #2f2e2e;
-  border-top: 0;
+  border-radius: 0;
 }
 
 .panel-footer div.row{
