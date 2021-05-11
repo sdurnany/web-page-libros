@@ -26,6 +26,8 @@
     <meta name="theme-color" content="#ffffff">
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- slider 3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <!-- style -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- fonts -->
@@ -33,6 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- link de iconos footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 <body>
   <header>
@@ -96,19 +99,22 @@
   <!-- Main Content-->
   <div id="main-content" class="container">
 
-    <!-- Carrucel -->
     <div class="jumbotron">
-      <div id="slider">
-        <figure>
-          <img src="img/b1.png">
-          <img src="img/b2.png">
-          <img src="img/b3.png">
-          <img src="img/b4.png">
-          <img src="img/b1.png">
-        </figure>
-      </div> <!-- End slider -->
-    </div> <!-- End jumbotron -->
-
+      <div class="slider">
+        <div>
+          <img class="img-responsive" src="img\b1.png" alt="imagen1">
+        </div>
+        <div>
+          <img class="img-responsive" src="img\b2.png" alt="imagen2">
+        </div>
+        <div>
+          <img class="img-responsive" src="img\b3.png" alt="imagen3">
+        </div>
+        <div>
+          <img class="img-responsive" src="img\b4.png" alt="imagen3">
+        </div>
+      </div>
+    </div>
 
     <!-- Categorias -->
     <div id="home-tiles" class="row">
@@ -178,9 +184,14 @@
 
 
 
+  
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- slider 3 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- OJO SE ESTAN SOLAPANDO JQUERY DE SLIDER CON EL DE BOOTSTRAP -->
 </body>
 </html>

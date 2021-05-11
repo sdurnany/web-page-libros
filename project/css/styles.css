@@ -56,7 +56,7 @@ body{
 
 /* Menú Header */
 
-.container{ /* container de header en relative para posicionale el menú */
+#header-nav .container{ /* container de header en relative para posicionale el menú */
   position: relative;
 }
 
@@ -75,7 +75,6 @@ body{
 
 #nav-list a{ /* letra del menú */
   color: #FFF;
-  /* text-transform: uppercase; */
   text-align: center;
   font-size: 0.9em;
 }
@@ -108,61 +107,19 @@ body{
   padding-top: 0;
   margin-top: -5px;
 }
-
-/* carrucel */
-
-#slider{
-  overflow: hidden;
+.slider .img-responsive{
+  margin-left: auto;
+  margin-right: auto;
+}
+.bx-wrapper{
+  background-color: transparent;
+  border: none;
 }
 
-#slider figure{
-  position: relative;
-  width: 500%; /* el ancho es de 500% para las 5 imagenes */
-  margin: 0;
-  left: 0; /* esta toda la imagen hacia la iz */
-  animation: 20s slider infinite;
-}
-
-#slider figure img{
-  width: 20%; /* 100 de la pantalla dividida en 5 imagenes */
-  float: left;
-}
-
-@keyframes slider{
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-
-/* End carrucel */
 
 
 
-/* HOME TILES */
+/*** HOME TILES ***/
 
 #catalogo-tile, #promociones-tile, #compra-tile { /* ajustando cuadro de categoarias */
   width: 100%;
@@ -206,7 +163,6 @@ body{
   background-color: #000;
   color: #fff;
   opacity: .8;
-
 }
 
 /* END HOME TILES */
@@ -282,24 +238,20 @@ body{
 }
 
 
-/* END FOOTER */
 
-
-
-
-
-/***** End Main Content ******************/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  #nav-list li{
+  /*** Menú Header ***/
+  #nav-list li{ /* Ancho de c/opcion de menú de 150px*/
     width:150px;
   }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  #nav-list li{
+  /*** Menú Header ***/
+  #nav-list li{ /* Ancho de c/opcion de menú de 100px*/
     width: 110px;
   }
 
@@ -307,9 +259,8 @@ body{
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
-  /**** HEADER MENU ****/
-  .container{ /* container sin el relative para posicionale el menu */
+  /*** Menú Header ***/
+  #header-nav .container{ /* container sin el relative para posicionale el menu */
     position: static;
   }
   #nav-list{
@@ -320,7 +271,6 @@ body{
   #nav-list li{
     width: 90px;
   }
-  /**** END HEADER MENU *****/
 
   /**** MAIN CONTENT ****/
   /* Tails */
@@ -338,7 +288,7 @@ body{
 @media (max-width: 767px) and (min-width: 481px) {
   /*** HEADER ***/
   /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
-  .container{ /* container sin el relative para posicionale el menu */
+  #header-nav .container{ /* container sin el relative para posicionale el menu */
   position: static;
   }
 
@@ -374,9 +324,9 @@ body{
 
 @media (max-width: 480px){
 
-  /*** HEADER ***/
-    /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
-  .container{ /* container sin el relative para posicionale el menu */
+  /*** Header ***/
+  /* Menú desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
+  #header-nav .container{ /* container sin el relative para posicionale el menu */
   position: static;
   }
   #nav-list{
@@ -384,9 +334,8 @@ body{
   }
   /* tamaño letra menu desplegable */
   #nav-list a{
-    font-size: .8em;
+    font-size: 3vw;
   }
-
   /* Nombre libreria */
   .navbar-brand{
     padding: 10px;
