@@ -9,7 +9,8 @@ function cambia_izq(){
 $(document).ready(function(){
     $('.slider').bxSlider({
       auto: true,
-      pause: 2000,
-      speed: 1200
+      pause: 3000,
+      speed: 1300,
+      autoControls: true
     });
   });

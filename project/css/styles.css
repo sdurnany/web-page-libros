@@ -107,20 +107,28 @@ body{
   padding-top: 0;
   margin-top: -5px;
 }
+/* centrar imagen */
 .slider .img-responsive{
   margin-left: auto;
   margin-right: auto;
 }
+/* color de fondo transparente y sin bordes */
 .bx-wrapper{
   background-color: transparent;
   border: none;
 }
-
-
-
+/* Slider/Carrucel */
+/* posicion botones de pausa y play */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+  bottom: 5%;
+}
+/* posicion puntos de opciones slider centrados*/
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{ 
+  text-align: center;
+  width: 100%;
+}
 
 /*** HOME TILES ***/
-
 #catalogo-tile, #promociones-tile, #compra-tile { /* ajustando cuadro de categoarias */
   width: 100%;
   height: 250px;
@@ -165,7 +173,6 @@ body{
   opacity: .8;
 }
 
-/* END HOME TILES */
 
 /* FOOTER */
 
@@ -246,6 +253,19 @@ body{
   #nav-list li{ /* Ancho de c/opcion de menú de 150px*/
     width:150px;
   }
+  /*** Main Content ***/
+  /* Slider/Carrucel */
+  /* posicion botones de pausa y play */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+    right: 48%;
+  }
+  /* posicion de botones next y prev de Slider */
+  .bx-wrapper .bx-controls-direction .bx-next{
+    right: 20px;
+  }
+  .bx-wrapper .bx-controls-direction .bx-prev{
+    left: 20px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -254,7 +274,12 @@ body{
   #nav-list li{ /* Ancho de c/opcion de menú de 100px*/
     width: 110px;
   }
-
+  /*** Main Content ***/
+  /* posicion botones de pausa y play */
+  /* Slider/Carrucel */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+    right: 47.5%;
+  }
 }
 
 /********** Small devices only **********/
@@ -272,13 +297,18 @@ body{
     width: 90px;
   }
 
-  /**** MAIN CONTENT ****/
+  /*** MAIN CONTENT ***/
+  /* Slider/Carrucel */
+  /* posicion botones de pausa y play */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+    right: 47%;
+  }
   /* Tails */
   #compra-tile { /* categoria compra libros en toda la pantalla 1005 */
     background: url("../img/compra-tile-800x500.jpg") no-repeat;
     background-position: center;
   }
-  /* FOOTER */
+  /*** FOOTER ***/
   .title-footer{
     margin-top: 30PX;
   }
@@ -291,28 +321,28 @@ body{
   #header-nav .container{ /* container sin el relative para posicionale el menu */
   position: static;
   }
-
   #nav-list{
     position: static;
   }
-
   /* Header */
   .navbar-brand{
     padding: 10px;
     height: 80px;
   }
-
   .navbar-brand h1{ /* nombre de Libreria */
     padding-top: 10px;
   }
-
   /*** MAINT CONTENT ***/
+  /* posicion botones de pausa y play */
+  /* Slider/Carrucel */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+    right: 46.5%;
+  }
   /* TILES */
   #catalogo-tile, #promociones-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
   }
-
   /*** FOOTER ***/
    .title-footer{
      margin-top: 30PX;
@@ -348,22 +378,16 @@ body{
   .navbar-brand p{ /* Subtitulo*/
     font-size: 2.6vw;
   }
-
-  /**** END HEADER ****/
-
-  /**** MAINT CONTENT ****/
-  /* carrucel */
-
-
-  /* carrucel */
-
-
+  /* Slider/Carrucel */
+  /* posicion botones de pausa y play */
+  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
+    right: 45%;
+  }
   /* TILES */
   #catalogo-tile, #promociones-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
   }
-
   #catalogo-tile, #promociones-tile, #compra-tile{
     width: 250px;
     height: 150px;
@@ -371,7 +395,4 @@ body{
   #catalogo-tile span, #promociones-tile span, #compra-tile span{
     height: 20%;
   }
-
-  /* END TILES */
-
 }
