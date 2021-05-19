@@ -7,29 +7,27 @@ body{
 }
 
 /*** HEADER ***/
-
 /* Fondo Header */
-
-#header-nav{ /* fondo header */
+/* fondo header */
+#header-nav{ 
   background: url("../img/portada_background.png");
   border: 0;
   border-radius: 0;
 }
-
 /* Logo, Titulo y Subtitulo */
-
-#logo-img{ /* Logo como background image */
+/* Logo como background image */
+#logo-img{ 
   background: url("../img/logo150x150.png") no-repeat;
   height: 150px;
   width: 150px;
   margin: 20px 20px 20px 0;
 }
-
-.navbar-brand{ /*Contenedor de nombre de Libreria y subtitulo se baja un poco*/
+/*Contenedor de nombre de Libreria y subtitulo se baja un poco*/
+.navbar-brand{ 
   padding-top: 20px;
 }
-
-.navbar-brand h1{ /* Nombre Libreria */
+/* Nombre Libreria */
+.navbar-brand h1{ 
   color: white;
   font-family: 'Abhaya Libre', 'serif';
   font-size: 2em;
@@ -40,12 +38,12 @@ body{
   line-height: 1;
   letter-spacing: 0.1em;
 }
-
-.navbar-brand a:hover, .navbar-brand a:focus{ /*Se saca subrrallado de link de nombreLibreria y subtitulo*/
+/*Se saca subrrallado de link de nombreLibreria y subtitulo*/
+.navbar-brand a:hover, .navbar-brand a:focus{ 
   text-decoration: none;
 } 
-
-.navbar-brand p{ /* Subtitulo de Nombre Libreria */
+/* Subtitulo de Nombre Libreria */
+.navbar-brand p{ 
   font-size: .7em;
   color: #CFB53B;
   text-transform: uppercase;
@@ -53,59 +51,54 @@ body{
   text-align: center;
 
 }
-
 /* Menú Header */
-
-#header-nav .container{ /* container de header en relative para posicionale el menú */
+/* container de header en relative para posicionale el menú */
+#header-nav .container{ 
   position: relative;
 }
-
-#nav-list{ /* menú en absolute respecto al container*/
+/* menú en absolute respecto al container*/
+#nav-list{ 
   position: absolute;
   bottom: 5px;
   right: 0px;
   margin: 0 15px 0 0;
 }
-
-#nav-list li{ /* fondo del menú */
+/* fondo del menú */
+#nav-list li{ 
   background-color: #000;
   opacity: 0.8;
   /* width: 150px; */
 }
-
-#nav-list a{ /* letra del menú */
+/* letra del menú */
+#nav-list a{ 
   color: #FFF;
   text-align: center;
   font-size: 0.9em;
 }
-
-#nav-list a:hover{ /* hover del menú */
+/* hover del menú */
+#nav-list a:hover{ 
   background: #E7E7E7;
   color: #000;
 }
-
 /* Menú desplegable Header */
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{ /* color del icono menu desplegable*/
+/* color del icono menu desplegable*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{ 
   border: 1px solid #fff;
 }
-
-.navbar-header button.navbar-toggle{ /* clear both icono de menú deaplegable para que se vea el titulo y subtitulo dentro del header */
+/* clear both icono de menú deaplegable para que se vea el titulo y subtitulo dentro del header */
+.navbar-header button.navbar-toggle{ 
   clear: both;
   margin-top: -20px;
 }
 
-
-
-
-
 /*** MAIN CONTENT ***/
-
 /* Color de jubotron transparente */
 .jumbotron {
   background-color: transparent;
   padding-top: 0;
+  padding-bottom: 30px;
   margin-top: -5px;
+  margin-bottom: 5px;
 }
 /* centrar imagen */
 .slider .img-responsive{
@@ -159,7 +152,6 @@ body{
   background-position: center;
 }
 
-
 #catalogo-tile span, #promociones-tile span, #compra-tile span {
   position: absolute;
   bottom: 0;
@@ -173,9 +165,7 @@ body{
   opacity: .8;
 }
 
-
-/* FOOTER */
-
+/*** FOOTER ***/
 /* estilo de divs en footer */
 .panel-footer{
   /* color del texto */
@@ -197,7 +187,6 @@ body{
   text-align: center;
   margin-bottom: 20px;
 }
-
 
 /* historia centrada */
 .panel-footer .historia-footer{
@@ -244,13 +233,11 @@ body{
   text-align: center;
 }
 
-
-
-
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   /*** Menú Header ***/
-  #nav-list li{ /* Ancho de c/opcion de menú de 150px*/
+  /* Ancho de c/opcion de menú de 150px*/
+  #nav-list li{ 
     width:150px;
   }
   /*** Main Content ***/
@@ -271,7 +258,8 @@ body{
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /*** Menú Header ***/
-  #nav-list li{ /* Ancho de c/opcion de menú de 100px*/
+  /* Ancho de c/opcion de menú de 100px*/
+  #nav-list li{ 
     width: 110px;
   }
   /*** Main Content ***/
@@ -285,7 +273,8 @@ body{
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /*** Menú Header ***/
-  #header-nav .container{ /* container sin el relative para posicionale el menu */
+  /* container sin el relative para posicionale el menu */
+  #header-nav .container{ 
     position: static;
   }
   #nav-list{
@@ -296,7 +285,6 @@ body{
   #nav-list li{
     width: 90px;
   }
-
   /*** MAIN CONTENT ***/
   /* Slider/Carrucel */
   /* posicion botones de pausa y play */
@@ -318,7 +306,8 @@ body{
 @media (max-width: 767px) and (min-width: 481px) {
   /*** HEADER ***/
   /* Header menu desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
-  #header-nav .container{ /* container sin el relative para posicionale el menu */
+  /* container sin el relative para posicionale el menu */
+  #header-nav .container{ 
   position: static;
   }
   #nav-list{
@@ -329,7 +318,8 @@ body{
     padding: 10px;
     height: 80px;
   }
-  .navbar-brand h1{ /* nombre de Libreria */
+  /* nombre de Libreria */
+  .navbar-brand h1{ 
     padding-top: 10px;
   }
   /*** MAINT CONTENT ***/
@@ -349,14 +339,12 @@ body{
    }
 }
 
-
 /********** Extre Extra small devices only **********/
-
 @media (max-width: 480px){
-
   /*** Header ***/
   /* Menú desplegable (para que funcione bootstrap hay que dejarlo con relative y absolute) */
-  #header-nav .container{ /* container sin el relative para posicionale el menu */
+  /* container sin el relative para posicionale el menu */
+  #header-nav .container{ 
   position: static;
   }
   #nav-list{
@@ -371,19 +359,25 @@ body{
     padding: 10px;
     height: 80px;
   }
-  .navbar-brand h1{ /* nombre de Libreria */
+  /* nombre de Libreria */
+  .navbar-brand h1{ 
     padding-top: 10px;
     font-size: 7.73vw;
   }
-  .navbar-brand p{ /* Subtitulo*/
+  /* Subtitulo*/
+  .navbar-brand p{ 
     font-size: 2.6vw;
+  }
+  /*** MAIN CONTENT ***/
+  .jumbotron{
+    padding-bottom: 0;
   }
   /* Slider/Carrucel */
   /* posicion botones de pausa y play */
   .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{ 
     right: 45%;
   }
-  /* TILES */
+  /*** TILES ***/
   #catalogo-tile, #promociones-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
