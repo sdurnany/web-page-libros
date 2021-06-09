@@ -2,7 +2,7 @@
 body{
   font-size: 16px;
   color: black;
-  background: url("../img/background-papel.png");
+  /* background: url("../img/background-papel.png"); */
   font-family: 'Oxygen', 'sans-serif';
 }
 
@@ -49,7 +49,6 @@ body{
   text-transform: uppercase;
   margin-top: -1px;
   text-align: center;
-
 }
 /* Menú Header */
 /* container de header en relative para posicionale el menú */
@@ -122,42 +121,42 @@ body{
 }
 
 /*** HOME TILES ***/
-#catalogo-tile, #promociones-tile, #compra-tile { /* ajustando cuadro de categoarias */
+/* ajustando cuadro de categoarias */
+#catalogo-tile, #ofertas-tile, #compra-tile { 
   width: 100%;
   height: 250px;
-  background-color: green;
   margin-bottom: 15px;
   position: relative;
   border: 1px solid #000;
   overflow: hidden;
   border-radius: 10px;
 }
-
-#catalogo-tile:hover, #promociones-tile:hover, #compra-tile:hover { /* hover de cada categoria */
+/* hover de cada categoria */
+#catalogo-tile:hover, #ofertas-tile:hover, #compra-tile:hover { 
   box-shadow: 0 1px 6px 1px #000;
 }
-
-#catalogo-tile { /* imagen de catalogo */
-  background: url("../img/catalogo-tile-360x250.jpg") no-repeat;
+/* imagen de catalogo */
+#catalogo-tile { 
+  background-position: center;
+  background: url("../img/hometiles/catalogo-tile-360x250.jpg") no-repeat;
+}
+/* imagen de promociones */
+#ofertas-tile { 
+  background: url("../img/hometiles/ofertas-tile-360x250.jpg") no-repeat;
+  background-position: center;
+}
+/* imagen de compra */
+#compra-tile { 
+  background: url("../img/hometiles/compra-tile-350x250.jpg") no-repeat;
   background-position: center;
 }
 
-#promociones-tile { /* imagen de promociones */
-  background: url("../img/promociones-tile-360x250.jpg") no-repeat;
-  background-position: center;
-}
-
-#compra-tile { /* imagen de compra */
-  background: url("../img/compra-tile-350x250.jpg") no-repeat;
-  background-position: center;
-}
-
-#catalogo-tile span, #promociones-tile span, #compra-tile span {
+#catalogo-tile span, #ofertas-tile span, #compra-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 15%;
+  height: 12%;
   text-align: center;
   font-size: 1.2em;
   background-color: #000;
@@ -227,10 +226,69 @@ body{
   background: #3B5998;
   color: white;
 }
-
 /* mapa  */
 .panel-footer #map-tile{
   text-align: center;
+}
+
+/*** PAGINA CATEGORÍA ***/
+/* menu categoría active */
+#nav-list .active a{
+  color:#000;
+}
+/* Main Content Categorías */
+.category-tile{
+  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+  /* width: 360px;
+  height: 250px; */
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+/* titulo categoría */
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  opacity: .8;
+  height: 12%;
+  font-size: 1.2em;
+}
+/* hover a cada category-tile */
+.category-tile:hover{
+  box-shadow: 0 1px 6px 1px #000;
+}
+#main-content h2{
+  font-size: 20px;
+}
+
+/*** PAGINA CATÁLOGO ***/
+/* anchura maxima 250px */
+div .cat-item-imglibro, div .cat-item-descripcion{
+  max-width: 250px;
+}
+/* margen abajo de cada item libro */
+.cat-item-descripcion{
+  margin-bottom: 15px;
+  color: #000;
+}
+section a:hover{
+  text-decoration: none;
+}
+.cat-item-descripcion .cat-item-titulo{
+  font-weight: 400;
+  line-height: 35px;
+  display: block;
+} 
+.cat-item-autor, .cat-item-editorial, .cat-item-detalle{
+  font-size: 12px;
+  display: block;
+  line-height: 20px;
 }
 
 /********** Large devices only **********/
@@ -329,7 +387,7 @@ body{
     right: 46.5%;
   }
   /* TILES */
-  #catalogo-tile, #promociones-tile, #compra-tile{
+  #catalogo-tile, #ofertas-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
   }
@@ -337,6 +395,11 @@ body{
    .title-footer{
      margin-top: 30PX;
    }
+   /*** PAGINA CATEGORÍA ***/
+  /* Main Content Categorías */
+  .category-tile{
+    width: 360px;
+  }
 }
 
 /********** Extre Extra small devices only **********/
@@ -378,15 +441,29 @@ body{
     right: 45%;
   }
   /*** TILES ***/
-  #catalogo-tile, #promociones-tile, #compra-tile{
+  #catalogo-tile, #ofertas-tile, #compra-tile{
     width: 360px;
     margin: 0 auto 20px;
   }
-  #catalogo-tile, #promociones-tile, #compra-tile{
+  #catalogo-tile, #ofertas-tile, #compra-tile{
     width: 250px;
     height: 150px;
   }
-  #catalogo-tile span, #promociones-tile span, #compra-tile span{
+  #catalogo-tile span, #ofertas-tile span, #compra-tile span{
     height: 20%;
+  }
+  /*** PAGINA CATEGORÍA ***/
+  /* Main Content Categorías */
+  .category-tile{
+    width: 290px;
+  }
+  /* col-xxs-12 */
+  .col-xxs-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
